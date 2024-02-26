@@ -1,7 +1,26 @@
 body
 {
-    height: 100vh;
+
     box-sizing: border-box;
     background-color: white;
     color: darkblue;
+}
+.apresentacao
+{   margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__caixadeinput
+{
+    width: 240px;
+}
+
+.apresentacao__caixadeinput__botoes
+{
+    font-size: 16px;
+    font-weight: 400;
 }

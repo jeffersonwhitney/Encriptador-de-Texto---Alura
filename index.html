@@ -6,12 +6,15 @@
     <title>Criptografador</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <input type="text" id="textoEncriptado">
-    <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
-    <button type="button" id="botaoEncriptador">Encriptar</button>
-    <button type="button" id="botaoDesencriptador">Desencriptar</button>
-    <button type="button" id="copiar">copiar</button>
-    <button type="button" id="colar">colar</button>
+<body class="apresentacao">
+    <section class="apresentacao__caixadeinput">
+        <input type="text" id="textoEncriptado">
+        <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoEncriptador">Encriptar</button>
+        <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoDesencriptador">Desencriptar</button>
+        <button type="button" id="colar">colar</button>
+    </section>
+        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+        <button type="button" id="copiar">copiar</button>
+
 </body>
 </html>
