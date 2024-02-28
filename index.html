@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="apresentacao">
+    <header></header>
     <section class="apresentacao__caixa">
-        <textarea name="texto_input" id="textoEncriptado" cols="30" rows="10";></textarea>
-        <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoEncriptador">Encriptar</button>
-        <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoDesencriptador">Desencriptar</button>
-        <button type="button" id="colar">colar</button>
+        <textarea class="apresentacao__caixadeinput" name="texto_input" id="textoEncriptado" cols="30" rows="10" autofocus; placeholder="Digite seu texto"></textarea>
+        <div class="apresentacao__caixadeinput__area_botoes">
+            <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoEncriptador">Encriptar</button>
+            <button class="apresentacao__caixadeinput__botoes" type="button" id="botaoDesencriptador">Desencriptar</button>
+        </div>
     </section>
     <section class="apresentacao__caixa">
-        <textarea disabled name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+        <img src="assets/moça_sentada.svg" alt="moça_sentada">
         <button type="button" id="copiar">copiar</button>
-    </section>    
+    </section>
+    
+    <footer></footer>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,34 +9,61 @@ body
 {
     height: 100vh;
     box-sizing: border-box;
-    background-color: white;
-    color: darkblue;
-    
+    background-color: #F3F5FC;
+    color: #0A3871;    
 }
+
+.apresentacao__caixadeinput{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    background-color: #F3F5FC;
+    border-color: #F3F5FC;
+}
+
 .apresentacao
 { 
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
 .apresentacao__caixa
 {
-    width: 300px;
-    height: 150px;
-    border: 2px solid #000; /* estilo, largura e cor da borda */
-    padding: 20px; /* espaço entre o texto e a borda */
-    margin: 10px; 
+    /* width: 300px; */
+    /* height: 150px; */
+    /* padding: 20px; */
+    /* margin: 10px;  */
     
+}
+
+.apresentacao__caixadeinput__area_botoes
+{
+display: flex;
+flex-direction: row;
+align-items: center; 
+justify-content: space-evenly;
+
 }
 
 .apresentacao__caixadeinput__botoes
 {
+
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    border: 2px solid #0A3871;
+    background-color: #0A3871;
+    border-radius: 24px;
+    color: white;
+    margin-right: 15%;
+    height: 67px;
+    width: 368px;
+    gap: 8px;
+
 }
 
 #textoEncriptado
