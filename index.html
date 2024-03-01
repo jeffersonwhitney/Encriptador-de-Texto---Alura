@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografador</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="apresentacao">
-    <header></header>
-    <section class="apresentacao__caixa">
-        <textarea class="apresentacao__caixadeinput" name="texto_input" id="textoEncriptado" cols="30" rows="10" autofocus; placeholder="Digite seu texto"></textarea>
-        <div class="apresentacao__caixadeinput__area_botoes">
-            <button class="botao_encriptar" type="button" id="botaoEncriptador">Criptografar</button>
-            <button class="botao_desencriptar" type="button" id="botaoDesencriptador">Descriptografar</button>
-        </div>
-    </section>
-    <section class="apresentacao__caixa">
-        <img src="assets/retangulo_bg.png" style="position: absolute; z-index: 1; top: 40px; left: 1000px;" id="retangulo_bg">
-        <img src="assets/moça_sentada.svg" alt="moça_sentada" style="position: absolute; z-index: 2; top: 180px; left: 1030px" id="moca_sentada">
-        <!-- <button type="button" id="copiar">copiar</button> -->
-    </section>
-    
-    <footer></footer>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criptografador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
 
-</body>
+        <div class="apresentacao">
+            <section class="apresentacao__caixa">
+                <textarea class="apresentacao__caixadeinput" name="texto_input" id="textoEncriptado" cols="30" rows="10" autofocus; placeholder="Digite seu texto"></textarea>
+                <div class="apresentacao__caixadeinput__area_botoes">
+                    <button class="botao_encriptar" type="button" id="botaoEncriptador">Criptografar</button>
+                    <button class="botao_desencriptar" type="button" id="botaoDesencriptador">Descriptografar</button>
+                </div>
+            </section>
+            <section class="apresentacao__imagem">
+                <!-- <img src="assets/retangulo_bg.png" style="position: absolute; z-index: 1; top: 40px; left: 1000px;" id="retangulo_bg"> -->
+                <img src="assets/moça_sentada.svg" alt="moça_sentada" id="moca_sentada">
+                <button class="botao_copiar" type="button" id="botaoCopiar">Copiar</button>
+            </section>
+        </div>
+
+        <footer></footer>
+
+    </body>
 </html>
