@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+*{
+    border: solid 1px red;
+}
+
 body {
-    height: 100vh;
     box-sizing: border-box;
     background-color: #F3F5FC;
     color: #0A3871;
@@ -9,15 +12,12 @@ body {
 
 .cabecalho{
     margin-top: 40px;
-    margin-bottom: 80px;
-    margin-right: 1300px;
-    display: flex;
-    justify-content: center;
+    scale: 0.8;
 }
 
 .apresentacao {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -26,17 +26,15 @@ body {
     font-weight: 400;
     font-size: 32px;
     background-color: #F3F5FC;
-    border: none;
+    /* border: none; */
     color: #0A3871;
     outline: none;
-    width: 680px;
-    height: 635px;
+    width: 500px;
+    height: 330px;
 }
 
 .apresentacao__caixa {
-    /* width: 680px; */
     padding-right: 2%;
-    /* margin: 10px; */
 }
 
 .apresentacao__imagem {
@@ -66,39 +64,34 @@ body {
     margin-bottom: 2%;
 }
 
-.apresentacao__caixadeinput__area_botoes {
+.apresentacao__caixadeinput__area_botoes
+{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-evenly; */
 }
 
-button {
+button 
+{
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
-    border: 2px solid #0A3871;
-    border-radius: 24px;
-    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 16px;
+    height: 50px;
 }
-
-.apresentacao__caixadeinput__area_botoes button {
-    /* padding: 0px 80px;
-    margin-top: 7.5%; */
-}
-
 
 .botao_encriptar {
     background-color: #0A3871;
     color: white;
-    margin-right: 80px;
-    width: 328px;
+    margin-right: 20px;
+    width: 250px;
 }
 
 .botao_desencriptar {
     background-color: #F3F5FC;
     color: #0A3871;
-    width: 328px;
+    width: 250px;
 }
 
 .botao_copiar {
@@ -116,11 +109,6 @@ button {
 #textoDesencriptado {
     resize: none;
 }
-
-/* #retangulo_bg {
-    width: 400px;
-    height: 700px;
-} */
 
 @media (max-width: 600px) {
     .apresentacao {
