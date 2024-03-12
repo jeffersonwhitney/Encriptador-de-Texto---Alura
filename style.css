@@ -10,18 +10,23 @@ body {
     color: #0A3871;
 }
 
-.cabecalho{
-    margin-top: 40px;
-    scale: 0.8;
-}
-
 .apresentacao {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     justify-content: center;
 }
 
-.apresentacao__caixadeinput {
+.apresentacao__esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#logo_alura{
+    width: 100px;
+}
+
+#texto__input{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -29,32 +34,7 @@ body {
     /* border: none; */
     color: #0A3871;
     outline: none;
-    width: 500px;
-    height: 330px;
-}
-
-.apresentacao__caixa {
-    padding-right: 2%;
-}
-
-.apresentacao__imagem {
-    width: 350px;
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#moca_sentada {
-    padding-top: 115px;
-    scale: 0.8;
-}
-
-#nenhuma_menssagem_encontrada
-{
-    padding-top: 32px;
-    padding-bottom: 115px;
+    resize: none;
 }
 
 #letras_minusculas
@@ -64,11 +44,39 @@ body {
     margin-bottom: 2%;
 }
 
-.apresentacao__caixadeinput__area_botoes
-{
+.apresentacao__esquerda__botoes{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+}
+
+.botao_cript {
+    background-color: #0A3871;
+    color: white;
+    margin-right: 20px;
+}
+
+.botao_descript {
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+.apresentacao__direita {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+#moca_sentada {
+    width: 80%;
+}
+
+#botao_copiar {
+    background-color: #0A3871;
+    color: white;
+    margin: 5% 0% 5%;
 }
 
 button 
@@ -79,35 +87,7 @@ button
     border: 1px solid #0A3871;
     border-radius: 16px;
     height: 50px;
-}
-
-.botao_encriptar {
-    background-color: #0A3871;
-    color: white;
-    margin-right: 20px;
-    width: 250px;
-}
-
-.botao_desencriptar {
-    background-color: #F3F5FC;
-    color: #0A3871;
-    width: 250px;
-}
-
-.botao_copiar {
-    background-color: #0A3871;
-    color: white;
-    width: auto;
-    padding: 0 37%;
-    margin-bottom: 5%;
-}
-
-#textoEncriptado {
-    resize: none;
-}
-
-#textoDesencriptado {
-    resize: none;
+    width: 100%;
 }
 
 @media (max-width: 600px) {

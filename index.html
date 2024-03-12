@@ -7,29 +7,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="cabecalho">
-                <img src="assets/logo_alura.png" alt="logo_alura">
-        </header>
-
-        <div class="apresentacao">
-            
-            <section class="apresentacao__caixa">
-                <textarea class="apresentacao__caixadeinput" name="texto_input" id="textoEncriptado" autofocus placeholder="Digite seu texto"></textarea>
-                <img src="assets/letras_minusculas.png" id="letras_minusculas">
-                <div class="apresentacao__caixadeinput__area_botoes">
-                    <button class="botao_encriptar" type="button" id="botaoEncriptador">Criptografar</button>
-                    <button class="botao_desencriptar" type="button" id="botaoDesencriptador">Descriptografar</button>
+        <section class="apresentacao">
+            <div class="apresentacao__esquerda">
+                <img src="assets/logo_alura.png" id="logo_alura" alt="logo_alura">
+                <div class="apresentacao__esquerda__usuario">
+                    <textarea id="texto__input" autofocus placeholder="Digite seu texto"></textarea>
+                    <img src="assets/letras_minusculas.png" id="letras_minusculas">
+                    <div class="apresentacao__esquerda__botoes">
+                        <button class="botao_cript" type="button" id="botaoCript">Criptografar</button>
+                        <button class="botao_descript" type="button" id="botaoDescript">Descriptografar</button>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="apresentacao__imagem">
-                <img src="assets/moça_sentada.svg" alt="moça_sentada" id="moca_sentada">
-                <img src="assets/nenhuma_menssagem_encontrada.png" alt="nenhuma mensagem encontrada" id="nenhuma_menssagem_encontrada">
-                <button class="botao_copiar" type="button" id="botaoCopiar">Copiar</button>
-            </section>
-        </div>
-
-        <footer></footer>
-
+            <div class="apresentacao__direita">
+                <img src="assets/moca_sentada.svg" alt="moca_sentada" id="moca_sentada">
+                <img src="assets/nenhuma_menssagem_encontrada.png" alt="nenhuma_mensagem_encontrada" id="nenhuma_menssagem_encontrada">
+                <button type="button" id="botao_copiar">Copiar</button>
+            </div>
+        </section>
     </body>
 </html>
