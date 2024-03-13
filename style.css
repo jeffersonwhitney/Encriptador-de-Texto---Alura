@@ -22,6 +22,11 @@ body {
     align-items: flex-start;
 }
 
+.logo{
+    width: 15vw;
+    margin-top: 1%;
+}
+
 #logo_alura{
     width: 100px;
 }
@@ -31,13 +36,21 @@ body {
     font-weight: 400;
     font-size: 32px;
     background-color: #F3F5FC;
-    /* border: none; */
+    border: none;
     color: #0A3871;
     outline: none;
     resize: none;
+    width: 50vw;
+    height: 60vh;
+    margin-top  : 15%;
+    padding-right: 50px;
 }
 
-#letras_minusculas
+textarea::placeholder {
+    color: #0A3871;
+  }
+
+  #letras_minusculas
 {
     display: flex;
     align-items: flex-start;
@@ -63,20 +76,32 @@ body {
 
 .apresentacao__direita {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
+    width: 300px;
+    height: 75vh;
+    margin: 1% 0 0 0;
+    padding-top: 8.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.8);
+
 }
 
 #moca_sentada {
     width: 80%;
 }
 
+#nenhuma_menssagem_encontrada{
+    width: 80%;
+}
+
 #botao_copiar {
     background-color: #0A3871;
     color: white;
-    margin: 5% 0% 5%;
+    margin: 120px 0% 7%;
+    height: 50px;
 }
 
 button 
@@ -87,7 +112,7 @@ button
     border: 1px solid #0A3871;
     border-radius: 16px;
     height: 50px;
-    width: 100%;
+    width: 260px;
 }
 
 @media (max-width: 600px) {
