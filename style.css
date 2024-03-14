@@ -50,7 +50,7 @@ textarea::placeholder {
     color: #0A3871;
   }
 
-  #letras_minusculas
+#letras_minusculas
 {
     display: flex;
     align-items: flex-start;
@@ -58,9 +58,12 @@ textarea::placeholder {
 }
 
 .apresentacao__esquerda__botoes{
+    width: 50vw;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .botao_cript {
@@ -81,12 +84,19 @@ textarea::placeholder {
     height: 75vh;
     margin: 1% 0 0 0;
     padding-top: 8.5%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.8);
+
+}
+
+.figuras_direita{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.8);
-
+    justify-content: center;
 }
 
 #moca_sentada {
@@ -97,11 +107,21 @@ textarea::placeholder {
     width: 80%;
 }
 
+.botao_copiar_area{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    margin-top: 0px;
+}
+
 #botao_copiar {
     background-color: #0A3871;
     color: white;
-    margin: 120px 0% 7%;
-    height: 50px;
+    margin-top: ;
+    margin-bottom: 7%;
 }
 
 button 
@@ -111,13 +131,13 @@ button
     font-weight: 400;
     border: 1px solid #0A3871;
     border-radius: 16px;
-    height: 50px;
-    width: 260px;
+    height: 3.5rem;
+    width: 16rem;
 }
-
+/* 
 @media (max-width: 600px) {
     .apresentacao {
         display: block;
     }
-}
+} */
 
