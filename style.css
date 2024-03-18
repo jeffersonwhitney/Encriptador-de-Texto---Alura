@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *{
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 body {
@@ -73,7 +73,7 @@ textarea::placeholder {
 }
 
 .botao_descript {
-    background-color: #F3F5FC;
+    background-color: #D8DFE8;   
     color: #0A3871;
 }
 
@@ -118,8 +118,8 @@ textarea::placeholder {
 }
 
 #botao_copiar {
-    background-color: #0A3871;
-    color: white;
+    background-color: white;
+    color: #0A3871;
     margin-top: ;
     margin-bottom: 7%;
 }
