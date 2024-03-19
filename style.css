@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *{
-    /* border: solid 1px red; */
+    border: solid 1px red;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .logo{
-    width: 15vw;
+    width: 130px;
     margin-top: 1%;
 }
 
@@ -81,15 +81,24 @@ textarea::placeholder {
     background-color: white;
     border-radius: 20px;
     width: 300px;
-    height: 75vh;
+    height: 90vh;
     margin: 1% 0 0 0;
-    padding-top: 8.5%;
-    /* display: flex;
+    padding: 1%;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.8);
 
+}
+
+.area_util_direita
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: auto;
+ height: 100%;
 }
 
 .figuras_direita{
@@ -97,6 +106,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20%;
 }
 
 #moca_sentada {
@@ -108,19 +118,19 @@ textarea::placeholder {
 }
 
 .botao_copiar_area{
-    height: 40%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: auto;
+    /* width: auto; */
     margin-top: 0px;
 }
 
 #botao_copiar {
     background-color: white;
     color: #0A3871;
-    margin-top: ;
+    /* margin-top: ; */
     margin-bottom: 7%;
 }
 
@@ -134,10 +144,40 @@ button
     height: 3.5rem;
     width: 16rem;
 }
-/* 
-@media (max-width: 600px) {
-    .apresentacao {
-        display: block;
-    }
-} */
 
+@media (max-width: 600px) {
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+    }
+    .apresentacao__esquerda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Estilos para mobile */
+  }
+  
+  @media (min-width: 769px) and (max-width: 900px) {
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+    }
+    .apresentacao__esquerda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apresentacao__esquerda__usuario{
+        width: 90vw;
+    }
+    .apresentacao__esquerda__botoes{
+        width: 90vw;
+        justify-content: center;
+    }
+    /* Estilos para tablet */
+  }
+  
+  @media (min-width: 1025px) {
+    /* Estilos para desktop */
+  }
