@@ -1,10 +1,23 @@
-function temLetraMaiuscula() {
-    const texto_input = document.getElementById("texto__input").value;
-    console.log(texto_input);
-    if (texto_input !== texto_input.toLowerCase()) {
-      console.log("O texto contém letras maiúsculas.");
-    } else {
-      console.log("O texto não contém letras maiúsculas.");
-    }
+function verificarMaiusculas() 
+{
+  const textoInput = document.getElementById("texto__input");
+  const valorTextoInput = textoInput.value;
+  const botaoCript = document.getElementById("botaoCript");
+
+  // const possuiMaiusculas = /[A-Z]/.test(valorTextoInput);
+  const possuiMinuscula = /[a-z]/.test(valorTextoInput);
+  const possuiEspaco = /[ ]/.test(valorTextoInput);
+
+  if (possuiMinuscula || possuiEspaco) {
+    botaoCript.disabled = false;
+    textoInput.style.cssText = "color: #0A3871;";
+  } else {
+    botaoCript.disabled = true;
+    textoInput.style.cssText = "color: red;";
   }
-  
+}
+
+function temLetraMaiuscula()
+{
+  alert("funcionou");
+}
