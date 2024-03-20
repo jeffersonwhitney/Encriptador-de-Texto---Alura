@@ -58,7 +58,7 @@ textarea::placeholder {
 }
 
 .apresentacao__esquerda__botoes{
-    width: 50vw;
+    width: fit-content;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -88,7 +88,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -117,14 +117,19 @@ textarea::placeholder {
     width: 80%;
 }
 
+#nenhuma_menssagem_encontrada_tablet{
+    width: 80%;
+    display: none;
+}
+
 .botao_copiar_area{
-    height: 80vh;
-    display: flex;
+    height: 20vh;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     /* width: auto; */
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 #botao_copiar {
@@ -132,6 +137,7 @@ textarea::placeholder {
     color: #0A3871;
     /* margin-top: ; */
     margin-bottom: 7%;
+    /* display: flex; */
 }
 
 button 
@@ -144,29 +150,82 @@ button
     height: 3.5rem;
     width: 16rem;
 }
+/* ---------------------------------------------------------------- */
+@media (max-width: 500px) 
+{
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+    }
+    #texto__input{
+        height: 45vh;
+        width: 90vw;
+        padding-right: 0px;
+    }
+    .apresentacao__esquerda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: #0A3871; */
+    }
+    .apresentacao__esquerda__botoes{
+        flex-direction: column;
+        width: 90vw;
+        height: 14vh;
+        align-items: center;
+        gap: 10px;
+    }
+    .botao_cript
+        {
+            margin-right: 0px;
+        }
+    button
+        {
+            width: 80vw;
+        }
+    #moca_sentada 
+        {
+            display: none;
+        }
+    .figuras_direita
+        {
+            padding-top: 0%;
+        }   
+    #nenhuma_menssagem_encontrada
+        {
+            display: flex;
+        }
+    #nenhuma_menssagem_encontrada_tablet
+        {
+            display: none;
+        }
+    .apresentacao__direita 
+        {
+            height: 20vh;
+            width: 90vw;
+        }
 
-@media (max-width: 600px) {
-    .apresentacao{
-        display: flex;
-        flex-direction: column;
-    }
-    .apresentacao__esquerda{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     /* Estilos para mobile */
-  }
-  
-  @media (min-width: 769px) and (max-width: 900px) {
+}
+  /* ---------------------------------------------------------------- */
+  @media (min-width: 500px) and (max-width: 900px) {
+
+    .logo{
+        margin-right: 80%;
+        margin-top: 1%;
+    }
     .apresentacao{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .apresentacao__esquerda{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #texto__input{
+        height: 40vh;
     }
     .apresentacao__esquerda__usuario{
         width: 90vw;
@@ -175,9 +234,21 @@ button
         width: 90vw;
         justify-content: center;
     }
+    .figuras_direita{
+        padding-top: 0%;
+    }
+    #moca_sentada {
+        display: none;
+    }
+    #nenhuma_menssagem_encontrada{
+        display: none;
+    }
+    #nenhuma_menssagem_encontrada_tablet{
+        display: flex;
+    }
+    .apresentacao__direita {
+        height: 20vh;
+        width: 90vw;
+    }
     /* Estilos para tablet */
-  }
-  
-  @media (min-width: 1025px) {
-    /* Estilos para desktop */
   }
