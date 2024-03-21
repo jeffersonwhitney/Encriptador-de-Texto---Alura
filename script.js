@@ -1,23 +1,24 @@
+
 function verificarMaiusculas() 
 {
   const textoInput = document.getElementById("texto__input");
   const valorTextoInput = textoInput.value;
   const botaoCript = document.getElementById("botaoCript");
+  const invalido = !(/^[a-z ]+$/.test(valorTextoInput));
+  const vazio = "";
 
-  // const possuiMaiusculas = /[A-Z]/.test(valorTextoInput);
-  const possuiMinuscula = /[a-z]/.test(valorTextoInput);
-  const possuiEspaco = /[ ]/.test(valorTextoInput);
 
-  if (possuiMinuscula || possuiEspaco) {
+  if (invalido || vazio) {
+    botaoCript.disabled = true;
+    botaoCript.style.cssText = "background-color: gray;";
+    textoInput.style.cssText = "color: red;";
+  } else {
     botaoCript.disabled = false;
     textoInput.style.cssText = "color: #0A3871;";
-  } else {
-    botaoCript.disabled = true;
-    textoInput.style.cssText = "color: red;";
+    botaoCript.style.cssText = "background-color: #0A3871;";
+    if(valorTextoInput=="priscila")
+    {
+      alert("TE AMO MEU AMOR <3");
+    }
   }
-}
-
-function temLetraMaiuscula()
-{
-  alert("funcionou");
 }
