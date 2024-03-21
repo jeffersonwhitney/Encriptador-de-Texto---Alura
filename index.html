@@ -21,18 +21,19 @@
             </div>
             <div class="apresentacao__esquerda">
                 <div class="apresentacao__esquerda__usuario">
-                    <textarea id="texto__input" autofocus placeholder="Digite seu texto" onkeyup="verificarMaiusculas()"></textarea>
+                    <textarea id="texto__input" autofocus placeholder="Digite seu texto" onkeyup="verificar()"></textarea>
                     <img src="assets/letras_minusculas.png" id="letras_minusculas">
                     <div class="apresentacao__esquerda__botoes">
-                        <button class="botao_cript" type="button" onclick="printa()" id="botaoCript">Criptografar</button>
-                        <button class="botao_descript" type="button" id="botaoDescript">Descriptografar</button>
+                        <button class="botao_cript" type="button" onclick="cript()" id="botaoCript">Criptografar</button>
+                        <button class="botao_descript" type="button" onclick="descript()"id="botaoDescript">Descriptografar</button>
                     </div>
                 </div>
             </div>
 
             <div class="apresentacao__direita">
-                <div class="area_util_direita">
-                <div class="figuras_direita">
+                <div class="area_util_direita" id="area_util_direita">
+                    <text id="textOutput"></text>
+                <div class="figuras_direita" id="figuras_direita">
                     <img src="assets/moca_sentada.svg" alt="moca_sentada" id="moca_sentada">
                     <img src="assets/nenhuma_menssagem_encontrada.png" alt="nenhuma_mensagem_encontrada" id="nenhuma_menssagem_encontrada">
                     <img src="assets/nenhuma_menssagem_encontrada_TABLET.png" alt="nenhuma_mensagem_encontrada_tablet" id="nenhuma_menssagem_encontrada_tablet">

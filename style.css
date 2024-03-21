@@ -100,6 +100,19 @@ textarea::placeholder {
  height: 100%;
 }
 
+#textOutput
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #495057;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .figuras_direita{
     display: flex;
     flex-direction: column;
@@ -165,7 +178,6 @@ button
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* background-color: #0A3871; */
     }
     .apresentacao__esquerda__botoes{
         flex-direction: column;
