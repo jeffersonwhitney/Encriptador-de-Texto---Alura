@@ -1,14 +1,16 @@
-
 function verificarMaiusculas() 
 {
   const textoInput = document.getElementById("texto__input");
   const valorTextoInput = textoInput.value;
   const botaoCript = document.getElementById("botaoCript");
-  const invalido = !(/^[a-z ]+$/.test(valorTextoInput));
-  const vazio = "";
+  let invalido = !(/^[a-z ]+$/.test(valorTextoInput));
 
+  if (valorTextoInput=="")
+  {
+    invalido = false;
+  }
 
-  if (invalido || vazio) {
+  if (invalido) {
     botaoCript.disabled = true;
     botaoCript.style.cssText = "background-color: gray;";
     textoInput.style.cssText = "color: red;";
